@@ -1,0 +1,14 @@
+﻿<Window x:Class="tscribe.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:tscribe"
+        mc:Ignorable="d"
+        Title="tscribe" Height="400" Width="600">
+    <Canvas>
+        <ToggleButton Content="Punch In" Command="{Binding ToggleTimerCommand}" Canvas.Left="10" Canvas.Top="10" Height="86" Width="204"/>
+        <TextBlock Canvas.Left="77" TextWrapping="Wrap" Text="{Binding CurrentTime}" Canvas.Top="151"/>
+        <TextBlock Canvas.Left="93" TextWrapping="Wrap" Text="{Binding TotalTime}" Canvas.Top="207"/>
+    </Canvas>
+</Window>
